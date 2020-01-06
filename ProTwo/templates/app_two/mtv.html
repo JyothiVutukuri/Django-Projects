@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block head_block %}
+<title>Users</title>
+{% endblock %}
+
+{% block body_block %}
+<h1>Here are your users:</h1>
+
+{% if user %}
+<table>
+    <tbody>
+    <th colspan=" 100 "> User Information</th>
+
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Email :</td>
+    </tr>
+
+    {% for u in user %}
+
+    <tr>
+        <td>{{ u.first_name }}</td>
+        <td>{{ u.last_name }}</td>
+        <td>{{ u.email}}</td>
+    </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endif %}
+{% endblock %}

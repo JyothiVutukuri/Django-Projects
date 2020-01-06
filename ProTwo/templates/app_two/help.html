@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load filter %}
+{% block head_block %}
+<title>Help Page</title>
+{% endblock %}
+
+    {% block body_block %}
+    <h1>This is my {{ my_variable|cut:"help" }} from app_two</h1>
+    <br>
+    <button type="button" name="home"><a href="/">Home</a></button>
+    {% endblock %}
+

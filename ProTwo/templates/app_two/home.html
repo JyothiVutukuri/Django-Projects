@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head_block %}
+  <title>JeevanJyothi</title>
+{% endblock %}
+
+{% block body_block %}
+    <h1>Welcome to Jeevan Jyothi Application</h1>
+    <br><br>
+    <img src="{% static "images/ours.jpg" %}" alt="image not found">
+    <br><br><br>
+
+    <button type="button" name="help"><a href="{% url 'Apptwo:help' %}">help</a></button>
+    <button type="button" name="users"><a href="{% url 'Apptwo:users' %}">users</a></button>
+    <button type="button" name="users"><a href="{% url 'Apptwo:form' %}">form</a></button>
+{% endblock %}

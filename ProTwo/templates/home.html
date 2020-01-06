@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block head_block %}
+    <title>Home Page</title>
+{% endblock %}
+
+{% block body_block %}
+      <div class="container">
+      <div class="jumbotron">
+          <h1>PROJECT TWO</h1><br>
+        <p>It has only one application "app_two"</p><br><br>
+        {% if user.is_authenticated %}
+            <h2>Welcome {{ user.username }}!</h2>
+        {% else %}
+            <h2>Welcome to the site!</h2>
+        {% endif %}
+      </div>
+    </div>
+
+{% endblock %}
+

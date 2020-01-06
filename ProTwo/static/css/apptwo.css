@@ -1,0 +1,40 @@
+html{
+  display: table;
+  margin: auto;
+}
+
+body{
+  padding-top: 70px;
+  /* align-content: center; */
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+h1{
+  color: blue;
+  border: 2px solid yellow;
+  width: fit-content;
+}
+
+img{
+  height: 300px;
+  width: 500px;
+}
+
+button{
+  padding: 10px;
+  background: lightcyan;
+  margin: 10px
+}
+
+table, th, td{
+
+    border : 3px solid black;
+    text-align : center
+
+}
+
+td{
+padding : 1px;
+}
